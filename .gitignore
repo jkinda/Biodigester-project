@@ -1,7 +1,12 @@
 # Large files and archives
 *.zip
 *.skp
+*.step
+*.stl
 *.snapshot.*
+
+# CAD folder
+CAD/
 
 # Cloned repos
 open-source-biogas-digester/

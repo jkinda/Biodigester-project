@@ -2,41 +2,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  /* Colors - Nature Eco Theme */
-  --bg-primary: #1a3328;
-  --bg-secondary: #1e3f30;
-  --bg-card: rgba(30, 70, 48, 0.6);
-  --bg-card-hover: rgba(38, 90, 58, 0.7);
-  --bg-glass: rgba(255, 255, 255, 0.07);
-  --bg-input: rgba(255, 255, 255, 0.09);
+  /* Colors - Light Cream / Eco Theme */
+  --bg-primary: #fafaf5;
+  --bg-secondary: #f5f0e8;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-card-hover: rgba(255, 255, 255, 0.95);
+  --bg-glass: rgba(34, 120, 60, 0.04);
+  --bg-input: rgba(0, 0, 0, 0.04);
 
-  --accent-green: #22c55e;
-  --accent-green-light: #4ade80;
-  --accent-emerald: #10b981;
-  --accent-teal: #14b8a6;
-  --accent-lime: #84cc16;
-  --accent-amber: #f59e0b;
-  --accent-orange: #f97316;
-  --accent-blue: #3b82f6;
-  --accent-red: #ef4444;
+  --accent-green: #16a34a;
+  --accent-green-light: #15803d;
+  --accent-emerald: #059669;
+  --accent-teal: #0d9488;
+  --accent-lime: #65a30d;
+  --accent-amber: #d97706;
+  --accent-orange: #ea580c;
+  --accent-blue: #2563eb;
+  --accent-red: #dc2626;
 
-  --text-primary: #f0fdf4;
-  --text-secondary: #bbf7d0;
-  --text-muted: rgba(187, 247, 208, 0.5);
+  --text-primary: #1a2e1a;
+  --text-secondary: #2d4a2d;
+  --text-muted: rgba(45, 74, 45, 0.5);
   --text-dark: #064e3b;
 
-  --border-subtle: rgba(34, 197, 94, 0.15);
-  --border-active: rgba(34, 197, 94, 0.4);
+  --border-subtle: rgba(22, 163, 74, 0.2);
+  --border-active: rgba(22, 163, 74, 0.5);
 
-  --gradient-hero: linear-gradient(135deg, #1a5c40 0%, #1a3328 50%, #2a4a1e 100%);
-  --gradient-card: linear-gradient(145deg, rgba(34, 197, 94, 0.08), rgba(16, 185, 129, 0.03));
-  --gradient-accent: linear-gradient(135deg, #22c55e, #10b981, #14b8a6);
-  --gradient-fire: linear-gradient(135deg, #f59e0b, #f97316, #ef4444);
-  --gradient-result: linear-gradient(145deg, rgba(34, 197, 94, 0.12), rgba(20, 184, 166, 0.06));
+  --gradient-hero: linear-gradient(135deg, #f0fdf4 0%, #fafaf5 50%, #fefce8 100%);
+  --gradient-card: linear-gradient(145deg, rgba(22, 163, 74, 0.06), rgba(5, 150, 105, 0.03));
+  --gradient-accent: linear-gradient(135deg, #16a34a, #059669, #0d9488);
+  --gradient-fire: linear-gradient(135deg, #d97706, #ea580c, #dc2626);
+  --gradient-result: linear-gradient(145deg, rgba(22, 163, 74, 0.08), rgba(13, 148, 136, 0.04));
 
-  --shadow-card: 0 4px 30px rgba(0, 0, 0, 0.3);
-  --shadow-glow: 0 0 40px rgba(34, 197, 94, 0.15);
-  --shadow-input: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-card: 0 2px 20px rgba(0, 0, 0, 0.06);
+  --shadow-glow: 0 4px 30px rgba(22, 163, 74, 0.12);
+  --shadow-input: inset 0 1px 3px rgba(0, 0, 0, 0.06);
 
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -77,9 +77,9 @@ body::before {
   width: 100%;
   height: 100%;
   background:
-    radial-gradient(circle at 20% 20%, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(20, 184, 166, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(132, 204, 22, 0.06) 0%, transparent 60%);
+    radial-gradient(circle at 20% 20%, rgba(22, 163, 74, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(13, 148, 136, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(101, 163, 13, 0.03) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
 }
@@ -225,8 +225,8 @@ body::before {
   position: relative;
   display: flex;
   align-items: center;
-  background: var(--bg-input);
-  border: 1px solid var(--border-subtle);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: var(--radius-sm);
   overflow: hidden;
   transition: var(--transition);
@@ -265,7 +265,7 @@ body::before {
   border-left: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.04);
   height: 100%;
 }
 
@@ -302,8 +302,8 @@ body::before {
 
 .climate-option.active {
   border-color: var(--accent-green);
-  background: rgba(34, 197, 94, 0.15);
-  box-shadow: 0 0 20px rgba(34, 197, 94, 0.1);
+  background: rgba(22, 163, 74, 0.1);
+  box-shadow: 0 0 20px rgba(22, 163, 74, 0.08);
 }
 
 .climate-option .emoji {
@@ -452,7 +452,7 @@ body::before {
   width: 100%;
   height: 10px;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.04);
   overflow: hidden;
 }
 
