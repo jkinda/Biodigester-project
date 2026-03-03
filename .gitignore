@@ -1,0 +1,19 @@
+# Large files and archives
+*.zip
+*.skp
+*.snapshot.*
+
+# Cloned repos
+open-source-biogas-digester/
+
+# Extracted folders
+bio-digester-1.snapshot.1/
+biodigester-3.snapshot.1/
+portable-anaerobic-biodigester-1.snapshot.34/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Node
+node_modules/
